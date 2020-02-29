@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "Yen96muri",
+  password: "n/a",
   database: "bamazon"
 });
 
@@ -42,8 +42,8 @@ function search() {
           itemID();
           break;
 
-        case "exit":
-          connection.end();
+        case "Exit":
+        connection.end();
           break;
         }
       });
@@ -86,44 +86,26 @@ function search() {
           message: "How many units would you like to purchase?"
         })
         .then(function(quantity) {
-
-               connection.query("SELECT price FROM products WHERE ?", { item_id: answer.item_id }, function(err, res) {
+               connection.query("SELECT price,stock_quantity FROM products WHERE ?", { item_id: answer.item_id }, function(err, res) {
                  if (err) throw err;
          
                  for (var i = 0; i < res.length; i++) {  
-                 console.log(
-                        "your total is $" + (quantity.amount * res[i].price)
+                 if(res[i].stock_quantity > 0){
+                    console.log(
+                        "Your total is $" + (quantity.amount * res[i].price)
                     )
+                    // connection.query("SELECT price,stock_quantity FROM products WHERE ?", { item_id: answer.item_id }, function(err, res) {
+                        search();
+
+                } else if (res[i].stock_quantity <= 0){
+                    console.log("OUT of STOCK");
+                    search()
                  }
-                 connection.end();
+                 }
                });
 
         });
-
       });
-      
-        // howMany();
     });
 }
 
-
-//   function howMany(){
-//     inquirer
-//     .prompt({
-//       name: "amount",
-//       type: "input",
-//       message: "How many units would you like to purchase?"
-//     })
-//     .then(function(answer) {
-//       connection.query("SELECT price FROM products WHERE ?", { item_id: answer.item_id }, function(err, res) {
-//         if (err) throw err;
-
-//         for (var i = 0; i < res.length; i++) {  
-//         console.log(
-//                "your total is $" + res[i].price
-//            )
-//         }
-//         connection.end();
-//       });
-//     });
-//   }
