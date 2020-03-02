@@ -9,7 +9,7 @@ All of this is tied to mysql workbench where the inventory is kept. The item ID 
 At the home, the user will be able to choose wether they'd like to an purchase item, view all items, or exit the application. 
 
 If the user chooses view all items:
-![view-items](all items.gif)
+![view-items](https://github.com/Yenseydm/bamazon/blob/master/all%20items.gif)
 
 If they have a successful purchase:
 ![successful-purchase]()
