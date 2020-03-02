@@ -12,14 +12,14 @@ If the user chooses view all items:
 ![view-items](https://github.com/Yenseydm/bamazon/blob/master/all%20items.gif)
 
 If they have a successful purchase:
-![successful-purchase]()
+![successful-purchase](https://github.com/Yenseydm/bamazon/blob/master/successful-p.gif)
 
 If the item is out of stock:
-![Out-of-stock]()
+![Out-of-stock](https://github.com/Yenseydm/bamazon/blob/master/outofstock.gif)
 
 If they choose to Exit:
-![exit-app]()
+![exit-app](https://github.com/Yenseydm/bamazon/blob/master/exit.gif)
 
 Mysql workbench:
-![mysql-workbench]()
+![mysql-workbench](https://github.com/Yenseydm/bamazon/blob/master/mysql.gif)
 
