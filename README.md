@@ -1,5 +1,5 @@
 # bamazon
-<b>OVERVIEW<b>
+<h1>OVERVIEW</h1>
   <br>
 This is a storefront application which allows users to see the items available for purchase at the store. 
 It then gives the user the option to purchase an item by entering its ID. As well as the amount they would like to purchase of each item.
@@ -7,7 +7,8 @@ If in stock, it proceeds to give the user the total. Otherwise, it notifies the 
 
 All of this is tied to mysql workbench where the inventory is kept. The item ID is used to locate wether we have items in stock. If so the item id is used to locate the item's price and calculates the total depending on the amount the user wants of the item.
 
-DEMONSTRATION
+<h1>DEMONSTRATION<h1>
+  <br>
 At the home, the user will be able to choose wether they'd like to an purchase item, view all items, or exit the application. 
 
 If the user chooses view all items:
