@@ -1,5 +1,6 @@
 # bamazon
-OVERVIEW
+<b>OVERVIEW<b>
+  <br>
 This is a storefront application which allows users to see the items available for purchase at the store. 
 It then gives the user the option to purchase an item by entering its ID. As well as the amount they would like to purchase of each item.
 If in stock, it proceeds to give the user the total. Otherwise, it notifies the user that we are out of stock of the current item and proceeds to return the user to home where they are again asked if they'd like to see the items, purchase and item, or exit the application.
